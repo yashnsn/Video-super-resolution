@@ -1,2 +1,3 @@
 # Video-super-resolution
 GAN has been used to enhance the video resolution. In the above GAN network, U-CNN or U-Net has been used for the generator network which helps to learn features and generate images more efficiently. The above network can generate 1080p video from a 720p video.
+Raw 720p video has been fed and the frames would be taken to train the network. The network takes Tth low resolution frame and T-1 th real high resolution frame to train whereas T-1 th generated frame is used while generating the video. In the above it helps the network for smooth transition from frame to frame in the video.
