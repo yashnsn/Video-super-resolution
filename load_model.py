@@ -4,9 +4,12 @@ import os
 import time
 from skimage.transform import resize
 from matplotlib import pyplot as plt
+from keras.models import load_model
+import InstanceNormalization
 
+gen1 = load_model("trained_model_path")
 count=0
-vidcap = cv2.VideoCapture('C:\\Users\\Reliance\\Desktop\\AI\\VRE\\suits_1080p.mkv')
+vidcap = cv2.VideoCapture('')
 success,img = vidcap.read()
 print(success)
 img = resize(img, (1080, 1920 ,3))
